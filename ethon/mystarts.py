@@ -1,4 +1,5 @@
 from telethon import events, Button
+from telethon.sync import TelegramClient
 
 API_ID = 17822592
 API_HASH = "a20b3dbbe07ed695563b4609a3e62012"
