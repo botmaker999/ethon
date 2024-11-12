@@ -1,4 +1,5 @@
 from telethon import events, Button
+from .. import bot
 
 async def start_srb(event, st):
     await event.reply(
@@ -23,7 +24,7 @@ async def vc_menu(event):
         ]
     )
 
-@Drone.on(events.callbackquery.CallbackQuery(data="close"))
+@bot.on(events.callbackquery.CallbackQuery(data="close"))
 async def close(event):
     try:
         await event.message.delete()  # Delete bot's message
