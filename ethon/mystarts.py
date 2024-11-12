@@ -6,9 +6,9 @@ from telethon import events, Button
 async def start_srb(event, st):
     await event.reply(st, 
                       buttons=[
-                              [Button.inline("SET THUMB.", data="set"),
-                               Button.inline("REM THUMB.", data="rem")],
-                              [Button.url("DEV", url="t.me/MaheshChauhan")]])
+                              [Button.inline("ꜱᴇᴛ ᴛʜᴜᴍʙ 🖼️", data="set"),
+                               Button.inline("ʀᴇᴍ ᴛʜᴜᴍʙ ✖️", data="rem")],
+                              [Button.url("ᴄʟᴏꜱᴇ", url="t.me/MaheshChauhan")]])
                               
     
 async def vc_menu(event):
