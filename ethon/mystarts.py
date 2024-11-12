@@ -1,5 +1,10 @@
 from telethon import events, Button
-from .. import bot
+
+API_ID = 17822592
+API_HASH = "a20b3dbbe07ed695563b4609a3e62012"
+BOT_TOKEN = "7576139299:AAGIS053Y3KbRgFPog9tRcpiNSnYD9c8wxE"
+
+bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 async def start_srb(event, st):
     await event.reply(
