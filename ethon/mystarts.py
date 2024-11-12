@@ -21,13 +21,3 @@ async def vc_menu(event):
             [Button.url("DEVELOPER", url="t.me/MaheshChauhan")]
         ]
     )
-
-@bot.on(events.callbackquery.CallbackQuery(data="close"))
-async def close(event):
-    try:
-        await event.message.delete()  # Delete bot's message
-        reply_message = await event.get_reply_message()
-        if reply_message:
-            await reply_message.delete()  # Delete user's message if exists
-    except Exception as e:
-        print(f"Error in close: {e}")
